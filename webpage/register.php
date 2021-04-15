@@ -1,7 +1,5 @@
-<?php  
-
+<?php
 include('connection.php');
-
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
@@ -20,19 +18,19 @@ include('connection.php');
 				<ul class="form">
 					<li>
 						<label for="username">Username</label>
-						<input type="text" name="username" id="username" required/>
+						<input type="text" name="username" value=<?=$username = ''?> id="username" required/>
 					</li>
 					<li>
 						<label for="fullname">Full Name</label>
-						<input type="text" name="fullname" id="fullname" required/>
+						<input type="text" name="fullname" value=<?=$fullname = ''?> id="fullname" required/>
 					</li>
 					<li>
 						<label for="email">Email</label>
-						<input type="email" name="email" id="email" />
+						<input type="email" name="email" value=<?=$email = ''?> id="email" />
 					</li>
 					<li>
 						<label for="pwd">Password</label>
-						<input type="password" name="pwd" id="pwd" required/>
+						<input type="password" name="pwd" value=<?=$password = ''?> id="pwd" required/>
 					</li>
 					<li>
 						<label for="confirm_pwd">Confirm Password</label>
